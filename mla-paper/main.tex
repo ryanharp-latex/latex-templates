@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage[leftmargin = 1in, rightmargin = 0in, vskip = 0in]{quoting}
+\usepackage{microtype}
+
+	\usepackage[style=mla, backend=bibtex]{biblatex}
+	\addbibresource{bibfile.bib}
+
+	\newcommand{\blockquotespacing}{\doublespaced}
+
+	\pagestyle{myheadings}
+	\markright{\hfill \emph{Last }}
+
+		\usepackage{tgtermes}
+		\usepackage[T1]{fontenc}
+
+\newcommand{\prose}{.25in}
+\newcommand{\poetry}{0in}
+\newcommand{\singlespaced}{\setstretch{1}\vspace{\baselineskip}}
+\newcommand{\doublespaced}{}
+\newenvironment{blockquote}[1][\prose]{\setlength{\parindent}{#1}\begin{quoting}\blockquotespacing}{\end{quoting}}
+
+\begin{document}
+\setstretch{2}
+\raggedright
+
+%Essay Heading
+	First Last \\ Teacher \\ Class \\ \today
+
+%Title
+	\centerline{Title}
+    
+\setlength{\parindent}{.5in}
+snathoesntuhsanotehusnatoehusnaoteuhsanotehusantoehuusantoehu
+anoetuhasontehusaonteuhsanotehusantoehuua
+asonethuasonetuhasnotehusantoehusantoehusantoehusantoehu
+anoetusanotehusantoehusnatoheuu \parencite[, 16]{bill}
+
+
+
+\printbibliography
+\end{document}
+
